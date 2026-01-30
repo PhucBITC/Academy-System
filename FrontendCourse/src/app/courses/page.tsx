@@ -560,7 +560,7 @@ const coursesPage = () => {
                                 All Courses
                             </h3>
                             <h1 className={course['container_slogan']}>
-                                All Quality Courses At LeHerry Academy
+                                All Quality Courses
                             </h1>
                         </div>
                         <div style={{position : 'relative', opacity : loading ? '0.4' : '1',}}>
@@ -672,7 +672,7 @@ const coursesPage = () => {
                                         <div className={course['filter_item']}>
                                             <h3>Level</h3>
                                             <ul>
-                                                {['Beginner Level', 'Intermediate Level', 'Expert Level', 'All Levels']
+                                                {['Beginner', 'Intermediate', 'Expert', 'All']
                                                     .map((level, index) => (
                                                         <li key={index}>
                                                             <input
