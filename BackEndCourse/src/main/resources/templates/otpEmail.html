@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #edf2f7;">
+<!-- Container -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #edf2f7; padding: 30px 0;">
+    <tr>
+        <td align="center">
+            <table width="600px" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border-radius: 10px; text-align: center; padding: 20px; box-sizing: border-box;">
+                <!-- Logo -->
+                <tr>
+                    <td style="padding: 20px 0;">
+                        <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/470239559_3574569539502202_7594212038103594162_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHVkQk3rn41VHWzV5sSjYekeEH6yJjQBQ54QfrImNAFDuE2fC8Dn_UmlaGNef6749lsEj8AiPqAdkP6yk5h2dGP&_nc_ohc=Rbf9Mpgs3ZsQ7kNvgEPZug_&_nc_oc=Adg-3qlw9eW1R-I1O4epiJsQvvToNJs9GA7Ir4muFObijYNki-7Y0s8t8X0XFoiEtvdxmaoFceAjk0KVVoqpnGYP&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=ARZxLf8BokuxMpSQseKzgtZ&oh=00_AYCBejM6e6_9R5ZepR8HAtVVlIiVzEZ6fHB7D77iDPtyuw&oe=676D6281" alt="Logo" width="100" height="100" style="display: block; margin: 0 auto;">
+                    </td>
+                </tr>
+                <!-- Title -->
+                <tr>
+                    <td>
+                        <h3 style="color: #3d4852; font-size: 22px; font-weight: bold; margin: 10px 0;">
+                            LeHerry Academy Account Verification
+                        </h3>
+                    </td>
+                </tr>
+                <!-- Instructions -->
+                <tr>
+                    <td style="color: #3d4852; font-size: 16px; line-height: 1.6; padding: 10px 0;">
+                        Use this code to sign up to Transmit Security.<br>
+                        This code will expire in 120 seconds.
+                    </td>
+                </tr>
+                <!-- OTP Code -->
+                <tr>
+                    <td align="center" style="padding: 20px 0;">
+                        <div th:text="${otp}" style="background-color: #edf2f7; color: #718096; border-radius: 4px; display: inline-block; padding: 16px 32px; letter-spacing: 10px; font-size: 24px; font-weight: bold;">
+
+                        </div>
+                    </td>
+                </tr>
+                <!-- Support Info -->
+                <tr>
+                    <td style="color: #3d4852; font-size: 14px; line-height: 1.6; padding: 10px 0;">
+                        If you have any questions, please contact us via email:
+                        <a href="mailto:hoanglv00256@gmail.com" style="color: blue; text-decoration: none;">hoanglv00256@gmail.com</a>
+                    </td>
+                </tr>
+                <!-- Footer -->
+                <tr>
+                    <td style="color: #3d4852; font-size: 14px; padding: 10px 0;">
+                        Best regards, <br>
+                        <a href="http://localhost:3000/" style="color: blue; text-decoration: none;">LeHerry Academy</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

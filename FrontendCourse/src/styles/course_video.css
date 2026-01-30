@@ -1,0 +1,221 @@
+.videocontainer{
+    margin-top: 100px;
+    min-height: calc(100vh - 300px); 
+    width: 100%;
+}
+
+.coursevideo{
+    position: relative;
+    height: 62vh;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+video{
+    border-radius: 8px;
+    border: 1px solid rgb(197, 197, 197);
+    height: 100%;
+
+}
+.course_menu{
+    background-color: white;
+    box-shadow: 0 3px 6px #00000029;
+    padding: 16px;
+    border-radius: 8px;
+
+
+    border: 1px solid #a9b3bb;
+    overflow-y: auto;
+    height: 600px;
+}
+
+.course_content{
+    padding: 0;
+    margin-bottom: 12px;
+}
+.course_content--related{
+    padding: 16px;
+}
+.course_price--related{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.course_price--oldRelated{
+    font-weight: 400 !important;
+    text-align: center !important;
+    margin-top: 6px !important;
+    margin-right: 10px;
+    font-size: 14px !important;
+    text-decoration: line-through;
+    
+}
+.course_price--newRelated{
+    font-weight: 600 !important;
+    font-size: medium !important;
+    color: #f05123;
+    margin-top: 6px !important;
+}
+
+.icon_plus{
+    font-size: x-small;
+    margin-right: 10px;
+    color: #f05123;
+    opacity: 0.4;
+    
+}
+.icon_minus{
+    font-size: small;
+    margin-right: 10px;
+    color: #f05123;
+}
+.User_content--header{
+    display: flex;
+    align-items: center;
+}
+
+.course_content--header{
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    font-size: medium;
+    font-weight: 600;
+    padding: 8px 5px;
+    border-radius: 4px;
+    border: 1px solid #a9b3bb;
+    cursor: pointer;
+}
+.course_content--header > div{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    
+    width: 78%;
+}
+
+.course_content--header i{
+    margin-bottom: -5px;
+    font-size: small;
+    margin-right: 10px;
+    color: #f48c06;
+}
+.course_content--index, .course_content--name, .course_content_lesson{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.course_content--index{
+    margin-right: 6px;
+}
+.course_content_lesson{
+    width: fit-content;
+    display: flex;
+    font-weight: 400;
+}
+.course_content--name{
+    white-space: nowrap;      
+    overflow: hidden;          
+    text-overflow: ellipsis;
+
+}
+.course_lesson--list{
+    margin-top: 6px;
+    list-style: none;
+}
+.course_lesson--list li{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.course_lesson--list li>div{
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    width: 82%;
+}
+
+.course_lesson--list i{
+    margin-bottom: -5px;
+    font-size: x-small;
+    margin-right: 10px;
+    color: #f48c06;
+    opacity: 0.4;
+}
+.lesson_index, .lesson_name, .lesson_time{
+    font-size: 1.2rem;
+    font-weight: 400;
+} 
+.lesson_index{
+    margin-right: 6px;
+}
+.lesson_time{
+    width: fit-content;
+    display: flex;
+    
+}
+.lesson_name{
+    white-space: nowrap;      
+    overflow: hidden;          
+    text-overflow: ellipsis;
+
+}
+.video_pause{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img-c.udemycdn.com/course/750x422/28295_6948_7.jpg');
+    background-size: cover;
+    border-radius: 8px;
+
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+.play-button {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.watch{
+    background: #f0512333;
+}
+.lock{
+    background-color: #e7e7e7;
+
+}
+.videoStatus{
+    width: fit-content !important;
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    color: #a9b3bb;
+    font-size: x-small;
+    margin-right: 10px;
+    opacity: 0.8;
+    margin-bottom: 2px;
+}
+.icon.checked{
+    color: #5db85c;
+}
+.icon.hide{
+    display: none;
+}

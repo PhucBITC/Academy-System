@@ -1,0 +1,433 @@
+.userLayout{
+    margin-top: 120px;
+    min-height: 500px;
+}
+.error-noUser{
+    margin-top: 120px;
+    min-height: calc(100vh - 300px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error-noUser img{
+    width: 300px;
+}
+
+.error-noUser span{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.user_taskbar {
+    border-right: 1px solid rgb(211, 210, 210);
+    height: 100%;
+}
+.taskbar_infor {
+    display: flex;
+    margin-top: 15px;
+}
+.taskbar_infor img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px ;
+} 
+.taskbar_changeInfo {
+}
+.taskbar_changeInfo h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3px !important;
+}
+.taskbar_changeLink {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.taskbar_changeLink svg{
+    margin-right: 4px;
+}
+.taskbar_list{
+    margin-top: 40px;
+    list-style: none;
+}
+.taskbar_list li{
+    margin-bottom: 14px;
+
+
+}
+.taskbar_list li svg{
+    margin-right: 10px;
+    width: 20px;
+}
+.taskbar_list li a{
+    color: black;
+    font-size: 1.4rem;
+    text-decoration: none;
+    
+} 
+.taskbar_list li a:hover{
+    color: #f48c06;
+}
+/* purchase */
+.purchase_list{
+    display: flex;
+    list-style: none;
+    padding:  0;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.6rem;
+}
+.purchase_list li{
+    padding: 24px 12px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.purchase_list li.active{
+    border-bottom: 3px solid #f48c06 ;
+    color: #f48c06;
+    margin-bottom: -1px;
+}
+.searchProduct {
+    background: #eaeaea;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    color: #212121;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    padding: 0 12px;
+}
+.searchProduct svg{
+
+    width: 20px;
+    height: 20px;
+    color: #a6a6a6;
+    margin-right: 10px;
+}
+.searchProduct input{
+    height: 100%;
+    border: none;
+    padding: 12px 0;
+    background: #eaeaea;
+    color: #898989;
+
+    flex: 1;
+}
+.searchProduct input:focus{
+    border: none;
+    outline: none;
+    color: #898989;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+td{
+    font-size: 1.4rem;
+}
+.cart-table thead th {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.cart-table tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.cart-table tbody .product-image {
+    width: 80px;
+}
+.cart-table .actions h3 {
+    color: #898989;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 4px !important;
+}
+.cart-table .actions h3:hover {
+    text-decoration: underline;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+}
+.product-info img {
+    width: 100px;
+    height: 55px;
+    margin-right: 10px;
+    object-fit: cover;
+
+}
+.product-details {
+    max-width: 400px;
+}
+.product-details h4{
+    font-size: 1.4rem;
+}
+.product-details p{
+    font-size: 1.1rem;
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+.voucherContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.voucherContainer:hover svg, .voucherContainer:hover .voucher{
+    color: #f48c06;
+}
+.product-details svg{
+    color: #898989;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.quantity-control button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+}
+.quantity-control input {
+    text-align: center;
+    width: 50px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+.voucher {
+    font-size: 1.4rem;
+    color: #898989;
+}
+.voucher a {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+.voucher a:hover {
+    text-decoration: underline;
+}
+.discount{
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    padding:  0;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    padding: 10px 0;
+    width: 100%;
+
+    font-size: 1.4rem;
+
+}
+.discount li:nth-child(1){
+    width: 60%;
+    color: #f48c06;
+    font-weight: 400;
+    margin-left: 14px;
+}
+.discount li:nth-child(1) svg{
+    margin-right: 6px;
+}
+.discount li:nth-child(2){
+    width: 20%;
+}
+.discount li:nth-child(2) svg{
+    margin-right: 6px;
+    color: #f48c06;
+}
+.discount li:nth-child(3){
+    width: 20%;
+    text-align: end;
+    color: #264790;
+    cursor: pointer;
+    margin-right: 14px;
+
+    
+}
+.discount li:nth-child(3):hover{
+    text-decoration: underline;
+}
+.discount li{
+
+}
+.pay{
+    display: flex;
+    list-style: none;
+    padding:  0;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.pay li{
+    position: relative;
+}
+.pay li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pay li:nth-child(5):hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.pay li:nth-child(1){
+    width: 4%;
+}
+.pay li:nth-child(1) input{
+    width: 100%;
+}
+.pay li:nth-child(5){
+    width: 10%;
+
+}
+
+.pay li:nth-child(5) div{
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: black;
+    align-items: center;
+    display: flex;
+}
+.pay li:nth-child(5) div:nth-child(1){
+    justify-content: end;
+}
+.pay li:nth-child(5) div:nth-child(1) svg{
+    font-size: 1.6rem;
+    margin-left: 6px;
+    color: #a6a6a6;
+}
+
+.pay li:nth-child(5) div:nth-child(2){
+    font-size: 1.4rem;
+    margin-left: 6px;
+    color: black;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 4px;
+    justify-content: end;
+}
+
+.pay li:nth-child(5) div:nth-child(2) h3{
+    color: black;
+    font-size: 1.4rem
+    ;
+    margin-left: 4px;
+    font-weight: 400;
+
+
+}
+.pay li:nth-child(6){
+    margin-right: 14px;
+    width: 24%;
+}
+
+
+
+  
+  .promo-container h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .promo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+  
+  .promo-table td {
+    font-size: 14px;
+    padding: 8px 0;
+    color: #333;
+  }
+  .promo-table tr:last-child{
+    border-top: 2px solid rgb(230, 228, 228);
+  }
+  .promo-table .align-right {
+    text-align: right;
+  }
+  
+  .promo-table .highlight td {
+    font-weight: bold;
+  }
+  
+  .promo-table .negative {
+    color: red;
+  }
+  
+  .promo-table .total td {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .promo-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    display: none !important;
+
+  }
+
+  .pay li:nth-child(5):hover .promo-container{
+    display: flex !important;
+
+  }
+  .pay_container{
+    border: 2px solid #ddd;
+    border-radius: 4px;
+
+  }
+  .pay{
+    padding-right: 14px;
+  }
+
+  .RegisFree{
+    width: 100%;
+    background-color: #F48C06;
+    border-radius: 18px;
+    height: 40px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.2s;
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+    text-decoration: none !important;
+  }
+  

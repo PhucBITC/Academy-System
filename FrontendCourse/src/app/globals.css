@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box ;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  overflow-x: hidden;
+}
+html{
+  font-size: 62.5%;
+}
+::-webkit-scrollbar {
+  width: 6px; /* Kích thước của thanh cuộn dọc */
+  height: 8px; /* Kích thước của thanh cuộn ngang */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền của track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7b55e; /* Màu của thumb */
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; /* Bo tròn các góc của thumb */
+  /* Bo tròn các góc của thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F48C06; /* Màu của thumb khi hover */
+}
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0px !important;
+}
+ input{
+  font-size: small !important;
+}
+ul{
+  padding-left: 0px !important;
+}
+
