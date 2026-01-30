@@ -88,7 +88,7 @@ const AppHeader = (props: IProps) => {
               <div className={header['header_authen--user']}>
                 <Dropdown>
                   <Dropdown.Toggle style={{
-                    backgroundColor: '#F48C06',
+                    backgroundColor: '#cbd3daff',
                     borderRadius: '18px'
                   }} id="dropdown-basic">
                     {user.name}
