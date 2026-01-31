@@ -109,9 +109,7 @@ npm run dev
 
 *(Add your screenshots here to show off the UI!)*
 
-| Home Page | Login Modal | Course Details |
-|:---:|:---:|:---:|
-| ![Home]
+🏠 Home Page (FULL ảnh)
 <img width="1346" height="597" alt="Screenshot 2026-01-31 151356" src="https://github.com/user-attachments/assets/1b19a31c-9fa8-411c-a66f-e1bf125a6ac8" />
 <img width="1351" height="527" alt="Screenshot 2026-01-31 151432" src="https://github.com/user-attachments/assets/156efada-d6a2-47e0-8a4c-10f246c99a3c" />
 <img width="1350" height="515" alt="Screenshot 2026-01-31 151447" src="https://github.com/user-attachments/assets/2bf2342f-b75b-49ac-8ebb-ba785d8843ea" />
@@ -119,10 +117,12 @@ npm run dev
 <img width="1353" height="512" alt="Screenshot 2026-01-31 151521" src="https://github.com/user-attachments/assets/c7b1a723-c493-42b4-9f09-501815cdc2cf" />
 <img width="1260" height="488" alt="Screenshot 2026-01-31 151542" src="https://github.com/user-attachments/assets/ab2893c9-13dd-457c-80be-00c1e3293997" />
 <img width="1338" height="278" alt="Screenshot 2026-01-31 151554" src="https://github.com/user-attachments/assets/482ef13f-7540-4e14-8aca-4fd5aa1f11a0" />
-| ![Login]
+
+🔐 Login / Authentication (FULL)
 <img width="400" height="432" alt="Screenshot 2026-01-31 151933" src="https://github.com/user-attachments/assets/a86b421c-5236-47ff-8e41-f2f860bb7cda" />
 <img width="372" height="535" alt="Screenshot 2026-01-31 151954" src="https://github.com/user-attachments/assets/50bfdc45-4e22-4e13-bc81-21c6f1280765" />
-| ![Course]
+
+📚 Course Details (FULL)
 <img width="1347" height="556" alt="Screenshot 2026-01-31 152121" src="https://github.com/user-attachments/assets/98969fcc-9186-4617-842c-d88139de792f" />
 <img width="1352" height="436" alt="Screenshot 2026-01-31 152144" src="https://github.com/user-attachments/assets/7ef42b6d-3672-4bba-b211-b1a017bc3f25" />
 <img width="1162" height="531" alt="Screenshot 2026-01-31 152204" src="https://github.com/user-attachments/assets/5ef699dd-9895-413a-ae9a-d389dbdf00dc" />
