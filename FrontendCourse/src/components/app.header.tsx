@@ -122,20 +122,45 @@ const AppHeader = (props: IProps) => {
                 <Link href={"/"}>Blog</Link>
               </li>
               <div className={header['header_authen']}>
-                <button className={header['header_login']} onClick={() => {
-                  setShowModalSignUp(false)
-                  setShowModalLogin(true)
-
-                }}>
+                <button
+                  onClick={() => {
+                    setShowModalSignUp(false)
+                    setShowModalLogin(true)
+                  }}
+                  style={{
+                    padding: '8px 20px',
+                    borderRadius: '6px',
+                    border: '1px solid #2563eb',
+                    backgroundColor: '#2563eb', // xanh dương
+                    color: '#fff',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    cursor: 'pointer'
+                  }}
+                >
                   Login
                 </button>
-                <button className={header['header_regis']} onClick={() => {
-                  setShowModalSignUp(true)
-                  setShowModalLogin(true)
-                }}>
-                  <div>Sign Up</div>
+
+                <button
+                  onClick={() => {
+                    setShowModalSignUp(true)
+                    setShowModalLogin(true)
+                  }}
+                  style={{
+                    padding: '8px 20px',
+                    borderRadius: '6px',
+                    border: '1px solid #16a34a',
+                    backgroundColor: '#16a34a', // xanh lá
+                    color: '#fff',
+                    fontSize: '14px',
+                    fontWeight: '500',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Sign Up
                 </button>
               </div>
+
             </ul>
 
           )}

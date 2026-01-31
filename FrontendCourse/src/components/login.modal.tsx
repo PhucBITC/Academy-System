@@ -435,7 +435,7 @@ function LoginModal(props: IProp) {
             <Form className='formLogin_Layout--left full'>
               <img src="/img/Logo_web.png" alt="" className="formlogoWeb" />
               <h3 className="form-login_title">
-                Sign Up LeHerry Academy
+                Sign Up 
               </h3>
               <p className="warning">
                 Each person should use their own account, accounts shared by multiple people will be locked.
@@ -539,7 +539,7 @@ function LoginModal(props: IProp) {
               <Form className='formLogin_Layout--left full'>
                 <img src="/img/Logo_web.png" alt="" className="formlogoWeb" />
                 <h3 className="form-login_title">
-                  Sign In LeHerry Academy
+                  Sign In
                 </h3>
                 <div className="form-login_service">
                   <div className="login-service_item" onClick={() => LoginWithFaceBook()}>
