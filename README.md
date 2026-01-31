@@ -137,5 +137,5 @@ Contributions are welcome! Please fork this repository and submit a Pull Request
 
 ## 📞 Contact
 **Phuc** - Full Stack Developer
-*   Email: [Your Email]
-*   GitHub: [Your GitHub Profile]
+*   Email: phucxo262@gmail.com  
+*   GitHub: https://github.com/PhucBITC
