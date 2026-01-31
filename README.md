@@ -1,4 +1,4 @@
-![8ef006b6-7afd-43d5-8e76-1eb322a2fa76](https://github.com/user-attachments/assets/48d73306-584a-4cef-ae75-99707c638738)# 🎓 Academy Course System (Phuc Academy)
+# 🎓 Academy Course System (Phuc Academy)
 
 > A modern, full-stack online learning platform built with **Spring Boot** and **Next.js**.
 
