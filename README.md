@@ -1,4 +1,4 @@
-# 🎓 Academy Course System (Phuc Academy)
+![8ef006b6-7afd-43d5-8e76-1eb322a2fa76](https://github.com/user-attachments/assets/48d73306-584a-4cef-ae75-99707c638738)# 🎓 Academy Course System (Phuc Academy)
 
 > A modern, full-stack online learning platform built with **Spring Boot** and **Next.js**.
 
@@ -111,7 +111,14 @@ npm run dev
 
 | Home Page | Login Modal | Course Details |
 |:---:|:---:|:---:|
-| ![Home](path/to/home.png) | ![Login](path/to/login.png) | ![Course](path/to/course.png) |
+| ![Home]<img width="1260" height="488" alt="Screenshot 2026-01-31 151542" src="https://github.com/user-attachments/assets/ab2893c9-13dd-457c-80be-00c1e3293997" />
+<img width="1353" height="512" alt="Screenshot 2026-01-31 151521" src="https://github.com/user-attachments/assets/c7b1a723-c493-42b4-9f09-501815cdc2cf" />
+<img width="1351" height="518" alt="Screenshot 2026-01-31 151504" src="https://github.com/user-attachments/assets/315ec188-98b4-40bd-80d8-ea249f7ea147" />
+<img width="1350" height="515" alt="Screenshot 2026-01-31 151447" src="https://github.com/user-attachments/assets/2bf2342f-b75b-49ac-8ebb-ba785d8843ea" />
+<img width="1351" height="527" alt="Screenshot 2026-01-31 151432" src="https://github.com/user-attachments/assets/156efada-d6a2-47e0-8a4c-10f246c99a3c" />
+<img width="1346" height="597" alt="Screenshot 2026-01-31 151356" src="https://github.com/user-attachments/assets/1b19a31c-9fa8-411c-a66f-e1bf125a6ac8" />
+<img width="1338" height="278" alt="Screenshot 2026-01-31 151554" src="https://github.com/user-attachments/assets/482ef13f-7540-4e14-8aca-4fd5aa1f11a0" />
+| ![Login](path/to/login.png) | ![Course](path/to/course.png) |
 
 ## 🤝 Contributing
 Contributions are welcome! Please fork this repository and submit a Pull Request.
