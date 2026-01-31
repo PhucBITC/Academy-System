@@ -321,7 +321,7 @@ function LoginModal(props: IProp) {
   const fetchSendOTPEmail = async () => {
     let newEmail = {
       emailSend: email,
-      subject: "LeHerry Academy OTP"
+      subject: "Academy OTP"
     }
     try {
       const response = await fetch('http://localhost:8080/api/email/public/sendEmailOTP',

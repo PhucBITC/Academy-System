@@ -1,33 +1,37 @@
 import os
-import time
 import google.generativeai as genai
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import pandas as pd
 
-
-genai.configure(api_key=os.environ["AI_API_KEY"])
+# Configure API Key
+API_KEY = "AIzaSyCMB1W7BU-UvVlQdCfXVBJpA8a9HLWT3J0"
+if "AI_API_KEY" in os.environ:
+    genai.configure(api_key=os.environ["AI_API_KEY"])
+else:
+    genai.configure(api_key=API_KEY)
 
 app = Flask(__name__)
-CORS(app)  
+CORS(app)
 
-def upload_to_gemini(path, mime_type=None):
-    file = genai.upload_file(path, mime_type=mime_type)
-    print(f"Uploaded file '{file.display_name}' as: {file.uri}")
-    return file
+# Load CSV data into memory at startup
+try:
+    df = pd.read_csv('course.csv')
+    csv_context = df.to_string(index=False)
+    print("Course data loaded successfully.")
+except Exception as e:
+    print(f"Error loading course.csv: {e}")
+    csv_context = ""
 
-# Hàm chờ các file được xử lý xong
-def wait_for_files_active(files):
-    print("Waiting for file processing...")
-    for name in (file.name for file in files):
-        file = genai.get_file(name)
-        while file.state.name == "PROCESSING":
-            print(".", end="", flush=True)
-            time.sleep(5)
-            file = genai.get_file(name)
-        if file.state.name != "ACTIVE":
-            raise Exception(f"File {file.name} failed to process")
-    print("...all files ready")
-    print()
+print("------------------------------------------------")
+print("CHECKING AVAILABLE MODELS FOR YOUR KEY:")
+try:
+    for m in genai.list_models():
+        if 'generateContent' in m.supported_generation_methods:
+            print(f"- {m.name}")
+except Exception as e:
+    print(f"Error listing models: {e}")
+print("------------------------------------------------")
 
 generation_config = {
     "temperature": 0.2,
@@ -38,38 +42,39 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-    model_name="gemini-2.0-flash-exp",
+    model_name="gemini-2.5-flash", # Confirmed model from user's list
     generation_config=generation_config,
 )
 
 @app.route('/get_courses', methods=['POST'])
 def get_courses():
+    if not csv_context:
+         return jsonify({"error": "Course data not available"}), 500
+
     data = request.json
     industry = data.get("industry", "front-end")
-    level = data.get("level", "cơ bản")
+    level = data.get("level", "beginner")
 
-    files = [
-        upload_to_gemini("course.csv", mime_type="text/csv"),
-    ]
-
-    wait_for_files_active(files)
-
-    chat_session = model.start_chat(
-        history=[
-            {
-                "role": "user",
-                "parts": [
-                    files[0],
-                ],
-            },
-        ]
-    )
-
-    query = f"From the data I provided, briefly list 5 course_title for 1 learning path {industry} {level}"
+    # Create a prompt that includes the data and strict formatting instructions
+    prompt = f"""
+    Context: Here is a list of available courses data:
+    {csv_context}
     
-    response = chat_session.send_message(query)
-    print(response.usage_metadata)
-    return jsonify({"response": response.text})
+    Task: Based on the dataset above, suggest a learning path of exactly 5 course titles for a '{industry}' student at '{level}' level.
+    
+    CRITICAL FORMATTING REQUIREMENT:
+    - You must output the course titles wrapped in double asterisks, like this: **Course Title**.
+    - Do not list courses that happen to be in the data but check if they match the request.
+    - Only return the list of 5 courses with a brief 1-sentence explanation for each.
+    """
+
+    try:
+        response = model.generate_content(prompt)
+        print(f"AI Response: {response.text}") # Log for debugging
+        return jsonify({"response": response.text})
+    except Exception as e:
+        print(f"AI Generation Error: {e}")
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

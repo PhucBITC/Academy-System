@@ -623,7 +623,7 @@ const CourseDetail = ({params} : {params : {courseId : string}}) => {
                                                 <div className={CourseItem['course_lectur']}>
                                                     <h3>Lecturer:</h3>
                                                     <img src="/img/Logo_web.png" alt="" className={CourseItem['avt_tutor']}/>
-                                                    <h3 className={CourseItem['course_lectur--name']}>LeHerry Academy</h3>
+                                                    <h3 className={CourseItem['course_lectur--name']}> Academy</h3>
                                                 </div>
                                                 <div className={CourseItem['course_price']}>
                                                     <h3 className={CourseItem['course_price--old']}>

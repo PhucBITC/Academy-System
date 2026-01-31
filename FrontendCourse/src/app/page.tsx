@@ -289,7 +289,7 @@ We are proud to support learners of all levels by providing practical knowledge,
           Lastest News and Resources
         </h3>
         <h1 className='container-slogan'>
-          Explore LeHerry Academy's global advancements
+          Explore  Academy's global advancements
         </h1>
         <div className={`${GridSystem['grid']} ${GridSystem['wide']}`}>
           <div className={`${GridSystem['row']} ${GridSystem['sm-gutter']}`}>

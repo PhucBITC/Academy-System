@@ -414,7 +414,7 @@ const purchasePage = () => {
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faTicket}/>
-                    LeHerry Academy Code
+                     Academy Code
                 </li>
                 <li>
                     Select or enter code
