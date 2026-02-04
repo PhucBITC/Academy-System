@@ -25,22 +25,26 @@ export default NextAuth({
       clientId: process.env.GITHUB_CLIENT_ID!,
       clientSecret: process.env.GITHUB_CLIENT_SECRET!
     }),
-    
+
   ],
   callbacks: {
     async signIn({ account, profile }) {
       if (account) {
         if (account.provider === "google" && profile && (profile as any).email_verified) {
-          return true; 
+          return true;
         } else if (account.provider === "facebook") {
           return true;
         } else if (account.provider === "github" && profile) {
-          return true; 
+          return true;
         }
       }
-      return false; 
+      return false;
     },
-    
-    
+
+
+  },
+  pages: {
+    signIn: '/',
+    error: '/',
   }
 });

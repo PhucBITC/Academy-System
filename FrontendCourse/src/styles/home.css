@@ -365,8 +365,8 @@
 }
 
 .container2-item:hover button {
-    background-color: #F48C06;
-    border: 1px solid #F48C06;
+    background-color: #7404a0;
+    border: 1px solid #7404a0;
 
 }
 
@@ -522,7 +522,7 @@
 }
 
 .blog-item span {
-    background-color: #F48C06;
+    background-color: #7404a0;
     color: white;
     border-radius: 8px;
     width: 130px;
@@ -579,7 +579,7 @@
 }
 
 .blog-item--col2 span {
-    background-color: #F48C06;
+    background-color: #7404a0;
     color: white;
     border-radius: 8px;
     width: 80px;

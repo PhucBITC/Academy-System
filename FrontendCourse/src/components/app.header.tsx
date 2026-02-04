@@ -80,10 +80,7 @@ const AppHeader = (props: IProps) => {
                 <Link href={"/courses"}>Course</Link>
               </li>
               <li className={header['header_category--item']}>
-                <Link href={"/"}>Contact</Link>
-              </li>
-              <li className={header['header_category--item']}>
-                <Link href={"/"}>Blog</Link>
+                <Link href={"/user/purchase"}>View Cart</Link>
               </li>
               <div className={header['header_authen--user']}>
                 <Dropdown>
@@ -117,9 +114,6 @@ const AppHeader = (props: IProps) => {
               </li>
               <li className={header['header_category--item']}>
                 <Link href={"/"}>Contact</Link>
-              </li>
-              <li className={header['header_category--item']}>
-                <Link href={"/"}>Blog</Link>
               </li>
               <div className={header['header_authen']}>
                 <button
